@@ -102,9 +102,7 @@ public class MainController implements Initializable  {
 	        CurrentWeather cwd = owm.currentWeatherByCityId(Integer.parseInt(data[0]));
 	     
 	        String city = cwd.getCityName();
-	        
-//	        System.out.println("City: " + city);
-	        
+
 	        double max = Math.round(cwd.getMainData().getTempMax() - 273.15);
 	        double min = Math.round(cwd.getMainData().getTempMin() - 273.15);
 	        double current = Math.round(cwd.getMainData().getTemp() - 273.15);
@@ -114,11 +112,6 @@ public class MainController implements Initializable  {
 	        info[2] = String.valueOf(current);
 	        info[3] = String.valueOf(max);
 	        info[4] = String.valueOf(min);
-	        
-//	        System.out.println("Temperature: " + max
-//	                            					+ "/" + 
-//	                            							min + "\'K");
-//	        System.out.println("Current : " + current); 
 	 }
 	  
 	  	@FXML
