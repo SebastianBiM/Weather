@@ -1,4 +1,4 @@
-package application;
+package Main;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,6 +13,8 @@ import org.controlsfx.control.textfield.TextFields;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import City.City;
+import WealtherInformation.WealtherInformationController;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -140,12 +142,12 @@ public class MainController implements Initializable  {
 		  	
 		  	Stage primaryStage = new Stage();
 		    FXMLLoader loader = new FXMLLoader();
-		    Pane root = loader.load(getClass().getResource("WealtherInformation.fxml").openStream());
+		    Pane root = loader.load(getClass().getResource("/WealtherInformation/WealtherInformation.fxml").openStream());
 		    WealtherInformationController wea = (WealtherInformationController)loader.getController();
 			wea.setInfo(getInfo());
 			
 		    Scene scene = new Scene(root);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("/Main/application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("Wealther Information");
 			primaryStage.show();

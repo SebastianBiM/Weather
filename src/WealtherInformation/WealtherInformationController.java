@@ -1,4 +1,4 @@
-package application;
+package WealtherInformation;
 
 import java.io.IOException;
 import java.net.URL;
