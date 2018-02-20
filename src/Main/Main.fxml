@@ -6,14 +6,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="88.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.MainController">
+<AnchorPane prefHeight="79.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.MainController">
    <children>
-      <Text layoutX="32.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write a city : ">
+      <Text layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write a city : ">
          <font>
-            <Font size="24.0" />
+            <Font size="20.0" />
          </font>
       </Text>
-      <TextField fx:id="userCity" layoutX="187.0" layoutY="25.0" prefHeight="40.0" prefWidth="149.0" />
-      <Button fx:id="showButton" layoutX="396.0" layoutY="24.0" mnemonicParsing="false" onAction="#showButton" prefHeight="40.0" prefWidth="94.0" text="Show Weather" />
+      <TextField fx:id="userCity" layoutX="129.0" layoutY="20.0" prefHeight="40.0" prefWidth="149.0" />
+      <Button fx:id="showButton" layoutX="288.0" layoutY="20.0" mnemonicParsing="false" onAction="#showButton" prefHeight="40.0" prefWidth="94.0" text="Show Weather" />
    </children>
 </AnchorPane>
